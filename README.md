@@ -57,4 +57,4 @@ Python, [Firedrake](https://firedrakeproject.org) for the finite element discret
 
 ## Background
 
-This was an MSc research project at Imperial College London, supervised by Prof. Colin Cotter. The full thesis, with the complete derivation, numerical framework, and results, is available on request.
+This was an MSc research project at Imperial College London, supervised by Prof. Colin Cotter. The full thesis, with the complete derivation, numerical framework, and results, is available on [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5930319), and listed on [Google Scholar](https://scholar.google.com/scholar?as_q=sania+singh+firedrake&hl=en&as_sdt=0%2C5&scisbd=0).
