@@ -46,6 +46,7 @@ Python, [Firedrake](https://firedrakeproject.org) for the finite element discret
 
 ## Repository Map
 
+- `run_simulations.py` : **main entry point**. Sweeps M and T values, runs both the multistream and 2D Vlasov solvers, and produces the checkpoint data behind every plot in this repo
 - `params.py`, `config.py` : simulation parameters (wavenumber, amplitude, domain size, mesh resolution)
 - `multistream_clean.py` : the 1D multistream solver
 - `vp1d.py` : the reference 2D Vlasov-Poisson solver
