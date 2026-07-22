@@ -28,9 +28,9 @@ At the very start, before any time evolution, the multistream method reproduces 
 
 As the system evolves in time, and the multistream result is compared against the full 2D solve:
 
-![Multistream vs 2D Vlasov convergence](plots/moments_convergence_final.png)
+![Multistream vs 2D Vlasov convergence](plots/varying_streams/T_1.png)
 
-*Relative error between the multistream and 2D Vlasov moments, at the final checkpoint, as the number of streams increases (k = 0.5). The error drops fast at first, then flattens once the streams are enough to resolve the velocity distribution.*
+*Relative error between the multistream and 2D Vlasov moments at T = 1, as the number of streams increases (k = 0.5). The error drops fast at first, then flattens once the streams are enough to resolve the velocity distribution. More time points in `plots/varying_streams/`.*
 
 Good accuracy shows up by three or four streams, long before the method needs anywhere near the resolution the full 2D solve requires. That gap is the entire point: it is where the computational saving lives.
 
@@ -47,14 +47,17 @@ Python, [Firedrake](https://firedrakeproject.org) for the finite element discret
 ## Repository Map
 
 - `run_simulations.py` : **main entry point**. Sweeps M and T values, runs both the multistream and 2D Vlasov solvers, and produces the checkpoint data behind every plot in this repo
-- `params.py`, `config.py` : simulation parameters (wavenumber, amplitude, domain size, mesh resolution)
+- `params.py` : simulation parameters (wavenumber, amplitude, domain size, mesh resolution)
 - `multistream_clean.py` : the 1D multistream solver
 - `vp1d.py` : the reference 2D Vlasov-Poisson solver
-- `analysis_clean.py` : entry point for running the comparative analysis
-- `analysis/` : moment calculation, cross-mesh interpolation, error analysis, and plotting
+- `analysis/` : the comparison pipeline, entry point is `convergence_study.py`
   - `moment_calculator.py`, `moment_transfer.py`, `error_analysis.py`, `data_loader.py`, `convergence_study.py`, `plotting.py`
-- `plots/` : generated convergence and error figures
+- `plots/` : the figures, organized by what each one varies, see `plots/README.md`
+- `architecture.md` : what each part of the codebase is, and the reasoning behind the design choices
+- `pipeline.md` : the execution order, start to finish
 - `project_presentation-3.pdf` : project presentation slides
+
+`analysis_clean.py`, at the repository root, is an earlier, now-superseded validation script. Kept for the record, not part of the current working pipeline (see `architecture.md`, Legacy layer).
 
 ## Background
 
