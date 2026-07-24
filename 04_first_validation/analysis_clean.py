@@ -1,3 +1,7 @@
+# NOTE: broken, kept for historical record only. Imports multistream_func,
+# renamed to multistream_clean since this script was written. Superseded by
+# analysis/convergence_study.py. See ../architecture.md, Legacy layer.
+
 from firedrake import *
 from firedrake.__future__ import interpolate
 import numpy as np
