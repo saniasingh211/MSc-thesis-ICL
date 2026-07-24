@@ -117,12 +117,14 @@ Raw checkpoint data (`.h5`, `.vtu`) is not stored in this repository and is rege
   - `vp1d.py` — reference 2D Vlasov-Poisson solver.
   - `analysis/` — convergence and error analysis pipeline.
 - `plots/` — generated figures.
-- `architecture.md` — code architecture and design decisions.
-- `pipeline.md` — execution workflow.
 - `01_learning/` — Firedrake tutorial examples completed during project development.
 - `02_prototypes/` — early prototype implementations.
 - `03_first_validation/` — archived validation scripts retained for reference.
-- `docs/` — presentation slides and research notebook.
+- `docs/` — everything explaining the work:
+  - `architecture.md` — code architecture and design decisions.
+  - `pipeline.md` — execution workflow.
+  - `project_presentation-3.pdf` — presentation slides.
+  - `research_log/` — a working notebook kept during the project.
 
 ---
 
