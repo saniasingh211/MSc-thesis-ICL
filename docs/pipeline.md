@@ -1,6 +1,6 @@
 # Pipeline
 
-The execution order, beginning to end. See `architecture.md` for what each piece is. All files below live under `pipeline/`.
+The execution order, beginning to end. See `architecture.md` for what each piece is. All files below live under `04_pipeline/`.
 
 1. `params.py` is imported first by everything downstream. It defines every physical constant (`k`, `A`, `H`, `L`, `T`, mesh resolution) and the two mesh factory methods.
 
@@ -40,7 +40,7 @@ The execution order, beginning to end. See `architecture.md` for what each piece
 
 19. It computes a chosen velocity moment from each representation, immerses the 1D multistream mesh into 2D phase space via `moment_transfer.py`, and interpolates the 2D moment onto that same line for a like-for-like comparison. This step exists because the two methods don't live on comparable meshes: multistream is a 1D spatial field, the 2D solve is defined over position and velocity together. Without immersion, there's no shared ground to measure an error on.
 
-20. `convergence_study.py` computes the relative L2 error between the two, across every `M` and `T`, and `plotting.py` renders the convergence figures that appear in `plots/`.
+20. `convergence_study.py` computes the relative L2 error between the two, across every `M` and `T`, and `plotting.py` renders the convergence figures that appear in `05_plots/`.
 
 ## Note
 

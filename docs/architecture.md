@@ -1,6 +1,6 @@
 # Architecture
 
-What each part of this codebase is, and how the pieces relate. See `pipeline.md` for the execution order. The files below (`params.py`, `multistream_clean.py`, `vp1d.py`, `run_simulations.py`, `analysis/`) all live together under `pipeline/`.
+What each part of this codebase is, and how the pieces relate. See `pipeline.md` for the execution order. The files below (`params.py`, `multistream_clean.py`, `vp1d.py`, `run_simulations.py`, `analysis/`) all live together under `04_pipeline/`.
 
 ## Overview
 
@@ -17,7 +17,7 @@ flowchart TD
     DL -->|hands off fields| MOM["moment_calculator.py,<br/>moment_transfer.py"]
     MOM -->|computes moments| EA["error_analysis.py"]
     EA -->|computes L2 error| PL["plotting.py"]
-    PL -->|renders figures| PLOTS["plots/"]
+    PL -->|renders figures| PLOTS["05_plots/"]
 ```
 
 `run_simulations.py` sits above the two solvers and orchestrates both. Everything below the checkpoints is the comparison layer, and only runs once both solvers have produced data.

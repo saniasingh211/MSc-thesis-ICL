@@ -56,7 +56,7 @@ Before time evolution begins, the multistream approximation reproduces the exact
 
 As the solution evolves, the multistream approximation remains in close agreement with the reference 2D finite element solution.
 
-![Multistream vs 2D Vlasov convergence](plots/varying_streams/T_1.png)
+![Multistream vs 2D Vlasov convergence](05_plots/varying_streams/T_1.png)
 
 _Relative error between the multistream and full 2D finite element solutions at **T = 1** with **k = 0.5**. The error decreases rapidly as the number of streams increases before reaching a plateau once the velocity distribution is sufficiently resolved._
 
@@ -98,7 +98,7 @@ pip install firedrake
 To reproduce the numerical results:
 
 ```bash
-cd pipeline
+cd 04_pipeline
 python run_simulations.py
 cd analysis
 python convergence_study.py
@@ -110,20 +110,20 @@ Raw checkpoint data (`.h5`, `.vtu`) is not stored in this repository and is rege
 
 ## Repository Structure
 
-- `pipeline/` — the working pipeline:
+- `01_learning/` — Firedrake tutorial examples completed during project development.
+- `02_prototypes/` — early prototype implementations.
+- `03_first_validation/` — archived validation scripts retained for reference.
+- `04_pipeline/` — the working pipeline:
   - `run_simulations.py` — main entry point. Runs parameter sweeps, executes both the multistream and reference Vlasov-Poisson solvers, and generates checkpoint data.
   - `params.py` — simulation parameters.
   - `multistream_clean.py` — multistream solver.
   - `vp1d.py` — reference 2D Vlasov-Poisson solver.
   - `analysis/` — convergence and error analysis pipeline.
-- `plots/` — generated figures.
-- `01_learning/` — Firedrake tutorial examples completed during project development.
-- `02_prototypes/` — early prototype implementations.
-- `03_first_validation/` — archived validation scripts retained for reference.
+- `05_plots/` — generated figures.
 - `docs/` — everything explaining the work:
   - `architecture.md` — code architecture and design decisions.
   - `pipeline.md` — execution workflow.
-  - `project_presentation-3.pdf` — presentation slides.
+  - `project_presentation.pdf` — presentation slides.
   - `research_log/` — a working notebook kept during the project.
 
 ---
