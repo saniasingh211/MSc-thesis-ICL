@@ -119,7 +119,7 @@ Raw checkpoint data (`.h5`, `.vtu`) is not stored in this repository and is rege
 - `pipeline.md` — execution workflow.
 - `01_learning/` — Firedrake tutorial examples completed during project development.
 - `02_prototypes/` — early prototype implementations.
-- `04_first_validation/` — archived validation scripts retained for reference.
+- `03_first_validation/` — archived validation scripts retained for reference.
 - `docs/` — presentation slides and research notebook.
 
 ---
@@ -131,4 +131,8 @@ This repository accompanies my MSc research project in Applied Mathematics and S
 The complete mathematical derivation, finite element formulation, numerical experiments, and validation studies are available in the accompanying paper:
 
 - **SSRN:** https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5930319
-- **Google Scholar:** Add your profile URL here once available.
+- **Google Scholar:** https://scholar.google.com/schhp?hl=en&authuser=3
+
+## How to Cite
+
+Sania Singh, *A Firedrake-Based Finite Element Approach to the Vlasov-Poisson Problem*, MSc thesis, Imperial College London, 2025. Supervised by Prof. Colin Cotter. Available on [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5930319).

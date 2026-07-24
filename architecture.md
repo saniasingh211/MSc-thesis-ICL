@@ -74,7 +74,7 @@ Five single-responsibility modules, wired together by `convergence_study.py`:
 - `error_analysis.py` computes relative L2 error
 - `plotting.py` renders error-vs-M and error-vs-T figures
 
-## Legacy layer (`04_first_validation/`)
+## Legacy layer (`03_first_validation/`)
 
 `analysis_clean.py` was the first validation script, using a `v⁴` weight and an older checkpoint layout under `results/`. It is currently broken (it imports `multistream_func`, a module later renamed to `multistream_clean`). Kept as a historical record of the first validation attempt, not part of the current working pipeline.
 
