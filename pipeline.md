@@ -1,6 +1,6 @@
 # Pipeline
 
-The execution order, beginning to end. See `architecture.md` for what each piece is. All files below live under `04_method/`.
+The execution order, beginning to end. See `architecture.md` for what each piece is. All files below live under `pipeline/`.
 
 1. `params.py` is imported first by everything downstream. It defines every physical constant (`k`, `A`, `H`, `L`, `T`, mesh resolution) and the two mesh factory methods.
 

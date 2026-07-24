@@ -98,7 +98,7 @@ pip install firedrake
 To reproduce the numerical results:
 
 ```bash
-cd 04_method
+cd pipeline
 python run_simulations.py
 cd analysis
 python convergence_study.py
@@ -110,7 +110,7 @@ Raw checkpoint data (`.h5`, `.vtu`) is not stored in this repository and is rege
 
 ## Repository Structure
 
-- `04_method/` — the working pipeline:
+- `pipeline/` — the working pipeline:
   - `run_simulations.py` — main entry point. Runs parameter sweeps, executes both the multistream and reference Vlasov-Poisson solvers, and generates checkpoint data.
   - `params.py` — simulation parameters.
   - `multistream_clean.py` — multistream solver.
