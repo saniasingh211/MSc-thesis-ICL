@@ -44,6 +44,25 @@ This work is ongoing. Next steps include looking beyond the single moment studie
 
 Python, [Firedrake](https://firedrakeproject.org) for the finite element discretisation, PETSc for the underlying linear solvers, and SciPy for the Gauss-Hermite quadrature.
 
+## Setup
+
+Tested with Firedrake 2025.4.0.post0, PETSc 3.23.0, Python 3.13.3 (NumPy 2.2.6, SciPy 1.15.3, Matplotlib 3.10.3), on macOS/Apple Silicon via Homebrew.
+
+Firedrake has its own configure tool that prints the right system packages and environment variables for your platform. Full instructions: https://firedrakeproject.org/install
+
+```bash
+brew install $(firedrake-configure --show-system-packages)
+export $(firedrake-configure --show-env)
+pip install firedrake
+```
+
+Then, to reproduce the results:
+
+```bash
+python run_simulations.py          # generates the checkpoint data
+cd analysis && python convergence_study.py   # generates the plots
+```
+
 ## Repository Map
 
 - `run_simulations.py` : **main entry point**. Sweeps M and T values, runs both the multistream and 2D Vlasov solvers, and produces the checkpoint data behind every plot in this repo
