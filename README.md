@@ -2,7 +2,7 @@
 
 ## The Question
 
-Plasmas is often called the fourth state of matter. Unlike ordinary gases, its charged particles interact through long-range electromagnetic forces, so the evolution of every particle depends on the collective behaviour of the entire system.
+Plasma is often called the fourth state of matter. Unlike ordinary gases, its charged particles interact through long-range electromagnetic forces, so the evolution of every particle depends on the collective behaviour of the entire system.
 
 Capturing this requires a **kinetic** description. Instead of tracking only bulk quantities such as density or temperature, kinetic models describe the full particle distribution across both physical space and velocity space.
 
