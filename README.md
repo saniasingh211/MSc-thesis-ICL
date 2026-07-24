@@ -55,9 +55,10 @@ Python, [Firedrake](https://firedrakeproject.org) for the finite element discret
 - `plots/` : the figures, organized by what each one varies, see `plots/README.md`
 - `architecture.md` : what each part of the codebase is, and the reasoning behind the design choices
 - `pipeline.md` : the execution order, start to finish
-- `project_presentation-3.pdf` : project presentation slides
-
-`analysis_clean.py`, at the repository root, is an earlier, now-superseded validation script. Kept for the record, not part of the current working pipeline (see `architecture.md`, Legacy layer).
+- `01_learning/` : Firedrake's own tutorial demos, worked through before original development began
+- `02_prototypes/` : the early, original scripts that came before the general `M`-stream method
+- `04_first_validation/` : `analysis_clean.py`, an earlier, now-superseded validation script. Kept for the record, not part of the current working pipeline (see `architecture.md`, Legacy layer)
+- `docs/` : `project_presentation-3.pdf`, project presentation slides
 
 ## Background
 

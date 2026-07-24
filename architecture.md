@@ -74,17 +74,17 @@ Five single-responsibility modules, wired together by `convergence_study.py`:
 - `error_analysis.py` computes relative L2 error
 - `plotting.py` renders error-vs-M and error-vs-T figures
 
-## Legacy layer
+## Legacy layer (`04_first_validation/`)
 
 `analysis_clean.py` was the first validation script, using a `v⁴` weight and an older checkpoint layout under `results/`. It is currently broken (it imports `multistream_func`, a module later renamed to `multistream_clean`). Kept as a historical record of the first validation attempt, not part of the current working pipeline.
 
-## Early prototypes (`archive/old-codes/`)
+## Early prototypes (`02_prototypes/`)
 
 - `DG_advection_1d.py`: a single scalar field advection plus Poisson solve, the first working piece
-- `DG_advection_i>1.py`: the first attempt at multiple streams, still has an unresolved variable-shadowing bug
+- `DG_advection_multistream.py`: the first attempt at multiple streams, still has an unresolved variable-shadowing bug (originally named `DG_advection_i>1.py`, renamed since `>` is an unsafe character in a filename)
 - `1d1v_single_stream.py`: a full single-stream Vlasov-Poisson solver, the direct precursor to the general `M`-stream method
 
-## Learning material
+## Learning material (`01_learning/`)
 
 Official Firedrake tutorial demos (DG advection, Helmholtz), worked through before original development began, to learn the finite element framework.
 
