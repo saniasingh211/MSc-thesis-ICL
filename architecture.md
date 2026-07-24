@@ -1,6 +1,6 @@
 # Architecture
 
-What each part of this codebase is, and how the pieces relate. See `pipeline.md` for the execution order.
+What each part of this codebase is, and how the pieces relate. See `pipeline.md` for the execution order. The files below (`params.py`, `multistream_clean.py`, `vp1d.py`, `run_simulations.py`, `analysis/`) all live together under `04_method/`.
 
 ## Overview
 

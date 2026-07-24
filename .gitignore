@@ -9,7 +9,7 @@ flow.md
 archive/
 paraview/
 results/
-analysis/plots/
+04_method/analysis/plots/
 ms_init/
 ms_final/
 vlasov_init/

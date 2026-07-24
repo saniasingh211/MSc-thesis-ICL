@@ -98,6 +98,7 @@ pip install firedrake
 To reproduce the numerical results:
 
 ```bash
+cd 04_method
 python run_simulations.py
 cd analysis
 python convergence_study.py
@@ -109,11 +110,12 @@ Raw checkpoint data (`.h5`, `.vtu`) is not stored in this repository and is rege
 
 ## Repository Structure
 
-- `run_simulations.py` — main entry point. Runs parameter sweeps, executes both the multistream and reference Vlasov-Poisson solvers, and generates checkpoint data.
-- `params.py` — simulation parameters.
-- `multistream_clean.py` — multistream solver.
-- `vp1d.py` — reference 2D Vlasov-Poisson solver.
-- `analysis/` — convergence and error analysis pipeline.
+- `04_method/` — the working pipeline:
+  - `run_simulations.py` — main entry point. Runs parameter sweeps, executes both the multistream and reference Vlasov-Poisson solvers, and generates checkpoint data.
+  - `params.py` — simulation parameters.
+  - `multistream_clean.py` — multistream solver.
+  - `vp1d.py` — reference 2D Vlasov-Poisson solver.
+  - `analysis/` — convergence and error analysis pipeline.
 - `plots/` — generated figures.
 - `architecture.md` — code architecture and design decisions.
 - `pipeline.md` — execution workflow.
