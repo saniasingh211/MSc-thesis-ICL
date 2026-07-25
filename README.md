@@ -135,7 +135,7 @@ This repository accompanies my MSc research project in Applied Mathematics and S
 The complete mathematical derivation, finite element formulation, numerical experiments, and validation studies are available in the accompanying paper:
 
 - **SSRN:** https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5930319
-- **Google Scholar:** https://scholar.google.com/schhp?hl=en&authuser=3
+- **Google Scholar:** https://scholar.google.com/citations?user=mONWcWMAAAAJ&hl=en&authuser=3
 
 This repository was originally developed under my Imperial College GitHub account (`ss3623`, referenced in the thesis PDF's appendix) and transferred to my personal account after graduation.
 
