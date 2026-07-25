@@ -56,7 +56,7 @@ I am solving for phi at each stage. Great.
 
 ---
 
-See also: [firedrake_velocity_solver_notes.md](firedrake_velocity_solver_notes.md)
+See also: [16_velocity_solver.md](16_velocity_solver.md)
 
 ---
 

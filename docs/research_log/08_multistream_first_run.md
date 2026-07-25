@@ -7,4 +7,4 @@ Got code working for i>1 streams. My task now is to figure out:
 - [ ] understand the maths and make sure it's all right
 - [ ] about first order accuracy: the q update
 
-See also: [code_walkthrough_single_stream.md](code_walkthrough_single_stream.md), [code_cleanup_suggestions.md](code_cleanup_suggestions.md), [single_vs_multistream_differences.md](single_vs_multistream_differences.md), [output_interpretation.md](output_interpretation.md)
+See also: [02_single_stream_code.md](02_single_stream_code.md), [09_cleanup_suggestions.md](09_cleanup_suggestions.md), [07_stream_differences.md](07_stream_differences.md), [06_output_meaning.md](06_output_meaning.md)
