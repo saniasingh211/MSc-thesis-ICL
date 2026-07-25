@@ -137,6 +137,8 @@ The complete mathematical derivation, finite element formulation, numerical expe
 - **SSRN:** https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5930319
 - **Google Scholar:** https://scholar.google.com/schhp?hl=en&authuser=3
 
+This repository was originally developed under my Imperial College GitHub account (`ss3623`, referenced in the thesis PDF's appendix) and transferred to my personal account after graduation.
+
 ## How to Cite
 
 Sania Singh, *A Firedrake-Based Finite Element Approach to the Vlasov-Poisson Problem*, MSc thesis, Imperial College London, 2025. Supervised by Prof. Colin Cotter. Available on [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5930319).
