@@ -56,9 +56,9 @@ Before time evolution begins, the multistream approximation reproduces the exact
 
 As the solution evolves, the multistream approximation remains in close agreement with the reference 2D finite element solution.
 
-![Multistream vs 2D Vlasov convergence](05_plots/varying_streams/T_1.png)
+![Convergence at t=0](05_plots/convergence_at_t0.png)
 
-_Relative error between the multistream and full 2D finite element solutions at **T = 1** with **k = 0.5**. The error decreases rapidly as the number of streams increases before reaching a plateau once the velocity distribution is sufficiently resolved._
+_Machine precision achieved by developed numerical scheme during initialization._
 
 Good agreement is obtained using only three or four streams, significantly reducing the computational cost compared with resolving the full velocity space directly. This reduction in degrees of freedom is the principal advantage of the multistream approach.
 
